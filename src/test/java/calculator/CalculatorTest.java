@@ -55,4 +55,11 @@ public class CalculatorTest {
         assertEquals(Calculator.power(-4, 2.0), 16.0, DELTA);
     }
 
+    @Test
+    public void testRoot() {
+        assertEquals(Calculator.root(1), 1.0, DELTA);
+        assertEquals(Calculator.root(4), 2.0, DELTA);
+        assertEquals(Calculator.root(0), 0, DELTA);
+        assertEquals(Calculator.root(16), 4.0, DELTA);
+    }
 }
